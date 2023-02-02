@@ -1,4 +1,4 @@
-package com.cadastro.cliente.cadastrocrud;
+package com.cadastro.cliente.cadastrocrud.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

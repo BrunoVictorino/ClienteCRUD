@@ -1,5 +1,7 @@
-package com.cadastro.cliente.cadastrocrud;
+package com.cadastro.cliente.cadastrocrud.controller;
 
+import com.cadastro.cliente.cadastrocrud.service.ClienteService;
+import com.cadastro.cliente.cadastrocrud.model.Cliente;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
