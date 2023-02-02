@@ -1,7 +1,7 @@
 package com.cadastro.cliente.cadastrocrud.controller;
 
 import com.cadastro.cliente.cadastrocrud.service.ClienteService;
-import com.cadastro.cliente.cadastrocrud.model.Cliente;
+import com.cadastro.cliente.cadastrocrud.model.ClienteEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +18,12 @@ public class ClienteController {
     }
 
     @PostMapping("/cadastro")
-    public ResponseEntity consulta(@RequestBody Cliente cliente){
+    public ResponseEntity cadastro(@RequestBody ClienteEntity cliente){
         return ResponseEntity.ok(service.salvar(cliente));
+    }
+    @DeleteMapping("/deletar/{id}")
+    void deletar(@PathVariable ("id") Integer id){
+       deletar(id);
     }
 
 }
